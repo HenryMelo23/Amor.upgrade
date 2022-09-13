@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&display=swap');
+body{
+    margin: 0;
+    background: rgb(0, 0, 0);
+    
+}
+a{
+    text-decoration: none;
+}
+p{
+    position: relative;
+}
+.logo img{
+    position: relative;
+    top: 3px;
+    left: 2px;
+    width: 4%;
+    animation: anim 0.7s infinite;
+    cursor: pointer;
+}
+@keyframes anima {
+    0% {
+        transform: scale(0.9);
+        opacity: 9;
+    }
+       50%{
+           opacity: 0.9;
+       }
+       100%{
+        transform: scale(1.07);
+        opacity: 10;
+    }
+}
+.texto{
+    background:transparent;
+    font-family: 'Edu NSW ACT Foundation';
+    padding: 0px 10px 0px;
+    top: 20px;
+    position: relative;
+}
+
+
+h2{
+    color: wheat;
+}
+l1{
+    position: absolute;
+    color: wheat;
+    left: 580px;
+    top: -73px;
+    margin: 0;
+    width: 100px;
+}
+ul{
+    list-style: none;
+    padding: 0;   
+    overflow: hidden;
+    transition: 0.9s;
+    left: 6px;
+}
+nav{
+    background: rgba(245, 222, 179, 0.39);
+    padding: 0px 0px -10px;
+    justify-content: space-between;
+    align-items: center;
+    height: 7%;
+    box-shadow: 0px 5px 20px wheat;
+}
+H1,p{
+    color: rgb(0, 0, 0);
+}
+nav,ul{
+    display: flex;
+    flex-direction: row;
+}
+li{
+    padding: 0 20px;
+    font-family:EB Garamond;
+    font-size: 20px;
+}
+H1{
+    padding: 10px;
+    margin: 0;
+    height: -40px;
+}
+.item-galeria img:hover{
+    transform: scale(1.02);
+    box-shadow: 0px 0px 10px wheat;
+}
+li:hover,
+H1:hover
+button:hover{
+    cursor: pointer;
+    opacity: 0.8;
+    background-color: rgba(255,255, 255, 0,2);
+}
+button{
+color:black;
+background: transparent;
+border: none;
+font-size: 25px;
+position: absolute ;
+right: 100px;
+top: 200px;
+display: none;
+}
+button:focus~ul{
+    height: 250px;
+    position: relative;
+}
+.conteiner{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-auto-rows:300px ;
+   }
+   .item-galeria{
+       position: relative;
+       left: 100px;
+   }
+   .item-galeria .I-galeria{
+       width: 100%;
+       height: 100%;
+       object-fit: cover;
+   }
+   
+   .item-galeria .Tgaleria{
+       position: absolute;
+       background-color: black;
+       left: 0;
+       bottom: 0;
+       color: white;
+       padding: 10px;
+       font-size: 10px;
+   }
+.icon{
+    position: relative;
+    top: 25px;
+    cursor: pointer;
+
+}
+.icon::before{
+    content: "\f186";
+    font-family: fontawesome;
+}
+
+/*Dark themer*/
+
+
+.nav.dark{
+    animation: 2s Ndark infinite;
+}
+
+@keyframes Ndark {
+    0%{box-shadow: 0px 1px 20px wheat;}
+    11%{box-shadow: 0px 2px 20px wheat;}
+    22%{box-shadow: 0px 3px 20px wheat;}
+    33%{box-shadow: 0px 4px 20px wheat;}
+    44%{box-shadow: 0px 5px 20px wheat;}
+    55%{box-shadow: 0px 6px 20px wheat;}
+    66%{box-shadow: 0px 5px 20px wheat;}
+    77%{box-shadow: 0px 4px 20px wheat;}
+    88%{box-shadow: 0px 3px 20px wheat;}
+    99%{box-shadow: 0px 2px 20px wheat;}
+    100%{box-shadow: 0px 1px 20px wheat;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------------------------------*/
+
+@keyframes animar {
+    0% {
+        background-image: linear-gradient(black, black,rgba(34, 240, 240, 0.466), rgba(0, 0, 0, 0.24)); 
+    }
+       
+       50%{
+        background-image: linear-gradient(black, black,rgba(34, 240, 240, 0.534), black);
+       }
+       75%{
+        background-image: linear-gradient(black, black,rgba(34, 240, 240, 0.466), rgba(0, 0, 0, 0.24));
+
+       }
+       100%{
+        background-image: linear-gradient(black, black,rgba(34, 240, 240, 0.534), black);
+    }
+}
+
+@media only screen and (max-width:700px){
+    .body{
+        overflow:visible;
+        
+    }
+    body.dark{
+        background: black;
+    }
+    body{
+        background-image: url('PL.gif');
+        background-repeat: no-repeat;
+        background-size: cover;
+        }
+    nav, ul{
+        flex-direction: column;
+       
+    }
+    .texto{
+        background: rgba(0, 0, 0, 0.37);
+        border-radius: 10px;
+    }
+    ul{
+        text-align: center;
+        margin: 0;
+        height: 0;
+    }
+    nav{
+        padding: 0px;
+        align-items: flex-start;
+        box-shadow: 0px 5px 10px wheat;
+        border-radius: 20px;
+        height: auto;
+    }
+    H1{
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    button{
+        top: -4px;
+        right: 20px;
+        display: flex;
+    }
+    li, ul{
+        width: 95%;
+    }
+    .texto{
+        width:auto;
+        font-size: 50%;
+    }
+    .conteiner{
+        display: none;
+        position: relative;
+        flex-direction: column;
+        width: 50%;
+        right: 95px;
+    }
+    .conteiner.dark{
+        display: flex;
+    }
+    .conteiner p{
+        top: -50px;
+        color: red;
+        position: relative;
+    }
+    .logo img{
+        width: 30px;
+    }
+
+    l1{
+        display: none;
+    }
+    p{
+        color: bisque;
+    }
+    .icon{
+        left: 13px;
+    }
+  }
