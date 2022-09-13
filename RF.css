@@ -223,9 +223,9 @@ button:focus~ul{
         height: 0;
     }
     nav{
-        padding: 0px;
+        padding: 0px 0px 12px;
         align-items: flex-start;
-        box-shadow: 0px 5px 10px wheat;
+        box-shadow: 0px 5px 30px wheat;
         border-radius: 20px;
         height: auto;
     }
@@ -234,7 +234,7 @@ button:focus~ul{
         margin-top: 10px;
     }
     button{
-        top: -4px;
+        top: -1px;
         right: 20px;
         display: flex;
     }
@@ -261,6 +261,8 @@ button:focus~ul{
         position: relative;
     }
     .logo img{
+        top: 7px;
+        left: 6px;
         width: 30px;
     }
 
