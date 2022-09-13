@@ -117,7 +117,9 @@ color: #4cc8d8;
     height: auto;
 }
 .rigth-login{
+   position: relative;
     width: 80%;
     height: auto;
+    right: 12px;
 }
 }
